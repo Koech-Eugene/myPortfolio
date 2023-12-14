@@ -1,0 +1,130 @@
+:root {
+    --base-blue: #3498db; /* Base blue color */
+  
+    --blue-shade-1: #2980b9; /* Slightly darker shade */
+    --blue-shade-2: #14274b; /* Darker shade */
+    --blue-shade-3: #2075c6; /* Slightly lighter shade */
+    --blue-shade-4: #4a90e2; /* Lighter shade */
+    --blue-shade-5: #5dade2; /* Much lighter shade */
+    --green: #2ecc71; /* Green color */
+    --orange: #e67e22; /* Orange color */
+    --purple: #9b59b6; /* Purple color */
+    --gray: #f7fafa; /* Gray color */
+    --sidebar-width: 240px;
+  }
+body{
+    background-color: var(--blue-shade-2);
+    color: var(--gray);
+}
+html{
+    scroll-behavior: smooth;
+}
+h2,h3,h4,h5,h6{
+    color: var(--gray);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:var(--blue-shade-3);
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: var(--green);
+}
+img{
+    max-width: 300px;
+    max-height: 337px;
+    object-fit: cover;
+    border: 50%;
+  
+}
+.text-brand{
+    color: var(--green);
+}
+.btn{
+    padding: 12px 28px;
+    font-weight: too;
+}
+.btn-brand{
+    color: var(--green);
+    border-color: #2ecc71;
+}
+.btn-brand:hover{
+    background-color: #2ecc71;
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.bg-base{
+    background-color: var(--blue-shade-1);
+}
+
+/* navbar */
+.navbar{
+    background-color: var(--blue-shade-2);
+}
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar .nav-item .nav-link:hover{
+    color:  green;
+}
+.navbar .nav-item .nav-link.active{
+    color: green;
+}
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--blue-shade-1);
+    border-color: var(--blue-shade-5);
+    color: var(--gray);
+}
+
+#contact .form-control:focus {
+    border-color: var(--blue-shade-2);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--blue-shade-2);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+    border-radius: 100px;
+    font-size: 24px;
+}
+@media(min-width:992px){
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(36, 36, 75, 0.9), rgba(35, 35, 63, 0.9)), url(./images/blurred-side.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img{
+        border: 8px solid var(--green);
+    }
+ 
+    /* content wrapper */
+#content-wrapper{
+    padding-left: var(--sidebar-width)   
+}
+}
