@@ -112,6 +112,10 @@ img{
     font-size: 24px;
 }
 @media(min-width:992px){
+    .body{
+        margin: 20px;    
+    }
+    
     .navbar{
         min-height: 100vh;
         width: var(--sidebar-width);
@@ -119,6 +123,7 @@ img{
         background-size: cover;
         background-position: center;
     }
+}
     .navbar-brand img{
         border: 8px solid var(--green);
     }
@@ -127,4 +132,4 @@ img{
 #content-wrapper{
     padding-left: var(--sidebar-width)   
 }
-}
+
